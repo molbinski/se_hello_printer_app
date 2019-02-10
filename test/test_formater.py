@@ -12,8 +12,8 @@ class TestFormater(unittest.TestCase):
         self.assertTrue(msg.isupper())
 
     def test_plain_lower_case(self):
-        l = plain_text_lower_case("WWIMIE", "EEEMSG")
-        name = l.split(" ")[0]
-        msg = l.split(" ")[1]
+        r = plain_text_lower_case("WWIMIE", "EEEMSG")
+        name = r.split(" ")[0]
+        msg = r.split(" ")[1]
         self.assertTrue(name.islower())
         self.assertTrue(msg.islower())

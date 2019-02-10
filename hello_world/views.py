@@ -19,3 +19,9 @@ def index():
 @app.route('/outputs')
 def supported_output():
     return ", ".join(SUPPORTED)
+
+
+@app.route('/outputsXML')
+def outputXML():
+    return get_formatted("<msg>" + msg + "</msg>" +
+                         "<imie>" + moje_imie + "</imie>")
