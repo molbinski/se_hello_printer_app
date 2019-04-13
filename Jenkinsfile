@@ -11,7 +11,7 @@ pipeline {
     	            sh 'make deps'
                   }
                 }
-            stage('Deps') {
+            stage('Test') {
                 steps {
     	            sh 'make test'
                   }
