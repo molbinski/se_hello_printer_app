@@ -9,6 +9,7 @@ script:
   - make lint
   - make test
   - make docker_build
+  - make test_xunit
 deploy:
   provider: heroku
   app: obscure-journey-46449
