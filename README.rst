@@ -1,4 +1,5 @@
 {<img src="https://travis-ci.org/molbinski/se_hello_printer_app.svg?branch=master" alt="Build Status" />}[https://travis-ci.org/molbinski/se_hello_printer_app]
+
 <a href="https://www.statuscake.com" title="Website Uptime Monitoring"><img src="https://app.statuscake.com/button/index.php?Track=QKClkfXbOA&Days=1&Design=1" /></a>
 
 Simple Flask App
