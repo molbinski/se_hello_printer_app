@@ -7,7 +7,7 @@ test:
   script:
     - make deps
     - PYTHONPATH=. py.test --verbose -s
-  Docker:
+  docker:
     image: docker:stable
     services:
       - docker:dind
