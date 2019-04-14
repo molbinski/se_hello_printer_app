@@ -4,7 +4,7 @@ stages:
 test:
   image: "python:2.7"
   stage: test
-  scripst:
+  script:
     - make deps
     - PYTHONPATH=. py.test --verbose -s
   Docker:
