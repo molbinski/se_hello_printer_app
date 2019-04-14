@@ -16,7 +16,7 @@ pipeline {
     	            sh 'make test'
                   }
                 }
-            stage("test") {
+            stage("test_xunit") {
                   steps {
                     sh 'make test_xunit || true'
                     xunit thresholds: [
