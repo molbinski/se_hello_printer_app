@@ -7,11 +7,11 @@ test:
   script:
     - make deps
     - PYTHONPATH=. py.test --verbose -s
-  docker:
-    image: docker:stable
-    services:
-      - docker:dind
-    stage: docker_build
-    script:
-      - apk add --update make
-      - make docker_build
+docker:
+  image: docker:stable
+  services:
+    - docker:dind
+  stage: docker_build
+  script:
+    - apk add --update make
+    - make docker_build
