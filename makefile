@@ -1,3 +1,5 @@
+.PHONY: test test_api
+
 deps:
 	pip install -r requirements.txt; \
 	pip install -r test_requirements.txt
@@ -8,7 +10,9 @@ lint:
 test:
 	PYTHONPATH=. py.test; \
 	PYTHONPATH=. py.test  --verbose -s
-.PHONY: test
+
+test_api:
+	PYTHONPATH=. python test_api/check_api.py
 
 run:
 	python main.py
