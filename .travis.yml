@@ -9,8 +9,16 @@ script:
   - make lint
   - make test
   - make docker_build
+<<<<<<< HEAD
   - sleep 3; make_test_api
   - sleep 3; make_test_api
   - sleep 3; make_test_api
 after_success:
   -make docker_push
+=======
+  - make test_xunit
+deploy:
+  provider: heroku
+  app: obscure-journey-46449
+  api_key: ${HEROKU_API_KEY}
+>>>>>>> c722fc4f812a9c23be62c1aa274b5ff1dc929d66

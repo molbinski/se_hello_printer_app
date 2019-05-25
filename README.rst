@@ -1,3 +1,14 @@
+
+Status
+=========
+.. image:: https://travis-ci.org/molbinski/se_hello_printer_app.svg?branch=master
+    :target: https://travis-ci.org/molbinski/se_hello_printer_app
+
+.. image:: https://app.statuscake.com/button/index.php?Track=QKClkfXbOA&Days=1&Design=1
+    :target: https://www.statuscake.com
+
+
+
 Simple Flask App
 ================
 
@@ -109,3 +120,32 @@ Materiały
 =========
 
 - https://virtualenvwrapper.readthedocs.io/en/latest/
+
+
+
+$ vim ~/.gitconfig
+
+$ git config --global user.name "USERNAME"
+$ git config --global user.email "USERNAME@users.noreply.github.com"
+
+# VIM
+$ sudo apt-get update
+$ sudo apt-get install vim
+
+#
+$ sudo pip install virtualenv
+$ sudo pip install virtualenvwrapper
+
+#
+$ cd he...
+$ source /usr/local/bin/virtualenvwrapper.sh
+$ mkvirtualenv wsb-simple-flask-app
+
+$ make deps
+$ make test
+$ make run
+
+
+# tak żeby zobaczyć w jakim
+# stanie zostawiliśmy nasz projekt
+$ make lint
