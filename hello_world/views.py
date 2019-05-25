@@ -2,6 +2,8 @@ from hello_world import app
 from formater import get_formatted
 from formater import SUPPORTED, PLAIN
 from flask import request
+from flask import url_for, redirect
+
 
 moje_imie = "ZMienilem"
 msg = "WitajSwiecie!"
@@ -25,3 +27,8 @@ def supported_output():
 def outputXML():
     return get_formatted("<msg>" + msg + "</msg>" +
                          "<imie>" + moje_imie + "</imie>")
+
+
+@app.route('/ui')
+def ui():
+    return redirect(url_for('static', filename='index.html'))
