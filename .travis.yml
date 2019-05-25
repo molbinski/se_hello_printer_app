@@ -9,3 +9,8 @@ script:
   - make lint
   - make test
   - make docker_build
+  - sleep 3; make_test_api
+  - sleep 3; make_test_api
+  - sleep 3; make_test_api
+after_success:
+  -make docker_push
